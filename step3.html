@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CanFly</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="font-awesome-4.4.0/css/font-awesome.min.css">
+  	<link rel="stylesheet" type="text/css" href="assets/css/datepicker.css">  	
+  	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-select.min.css"> 	
+	<!--<script type="text/javascript" src="assets/js/main.js"></script>-->	
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600' rel='stylesheet' type='text/css'>
+	<link href="assets/square/yellow.css" rel="stylesheet">
+	<link href="assets/flat/yellow.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!--<script>
+  $(document).ready(function(){
+
+$(".sliding-div").hide();
+$(".click-show_hide").show();
+
+$('.click-show_hide').click(function(){
+$(".sliding-div").slideToggle('slow');
+});
+
+});
+  </script>-->
+      <style type="text/css">
+        #preloader {
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 999;
+            width: 100%;
+            height: 100%;
+            overflow: visible;
+            background: #f5f5f5 url('canflyloader.gif') no-repeat center center;
+        }
+    </style>
+
+</head>
+<body>
+<div id="preloader"></div>
+	<div class="wrap">
+		<!--<div class="loader">
+			<div class="blink">
+			</div>
+		</div>-->
+		<div class="border-top">			
+		</div>
+		<!--<div class="container-fluid">
+			<div class="col-md-3 col-md-offset-9 align-right">
+				<a href="#" class="click-show_hide"><i class="fa fa-object-group"></i></i></a>
+				<div class="sliding-div" style="float:left;text-align:left;">
+					<ul class="header-top">
+						<li><a href="#">Contact</a></li>
+						<li><a href="#" style="border-left: 3px solid #252525;">About Us</a></li>
+					</ul>
+				</div>
+			</div>			
+		</div>-->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-3">
+					<a href="index.html">
+						<div class="logo-steps">							
+						</div>
+					</a>
+				</div>
+				<div class="col-md-6 top-select">
+					<h3>
+						<select class="selectpicker bs-select-hidden" name="No. of passengers" title="No. of passengers" data-live-search="true">
+							<option class="bs-title-option" value>No. of passengers</option>
+							<option value="1">1 passenger</option>
+							<option value="2">2 passengers</option>
+							<option value="3">3 passengers</option>
+							<option value="4">4 passengers</option>
+							<option value="5">5 passengers</option>
+							<option value="6">6 passengers</option>
+							<option value="7">7 passengers</option>
+							<option value="8">8 passengers</option>
+							<option value="9">9 passengers</option>
+							<option value="10">10 passengers</option>
+						</select>
+						<br><div class="top-divider"></div>
+						<span class="top-letter">are flying from</span>
+						<br>
+						<select class="selectpicker bs-select-hidden" name="Departure" title="Departure" data-live-search="true">
+							<option class="bs-title-option" value>Departure</option>
+							<option value="Chennai">Chennai</option>
+							<option value="Bangalore">Bangalore</option>
+							<option value="Delhi">Delhi</option>
+							<option value="Coimbatore">Coimbatore</option>
+							<option value="Goa">Goa</option>
+						</select>
+						<br><div class="top-divider"></div> 
+						<span class="top-letter">to</span>
+						<br>
+						<select class="selectpicker bs-select-hidden" name="Destination" title="Destination" data-live-search="true">
+							<option class="bs-title-option" value>Destination</option>
+							<option value="Chennai">Chennai</option>
+							<option value="Bangalore">Bangalore</option>
+							<option value="Delhi">Delhi</option>
+							<option value="Coimbatore">Coimbatore</option>
+							<option value="Goa">Goa</option>
+						</select>
+						<br><div class="top-divider"></div>
+						<span class="top-letter">on</span>
+						<br>
+						<div class="input-group date top-input">
+							<input type="text" id="datepicker" class="datepicker form-control" placeholder="Date of travel" data-date-format="mm/dd/yyyy" data-provide="datepicker"/>
+						</div>							
+					</h3>
+				</div>
+				<!--<div class="col-md-3">
+					<ul class="header-top">
+						<li><a href="#">Contact</a></li>
+						<li><a href="#" style="border-left: 7px solid #252525;">About Us</a></li>
+					</ul>
+				</div>-->
+			</div>	
+		</div>
+		<div class="container-fluid steps-bar">
+			<div class="container">
+				<div class="row steps-align">
+					<div class="col-md-3 col-sm-3 col-xs-3 text-center">
+							<span class="step-number"><a href="step2.html" class="fa fa-arrow-left"></a></span>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-6 text-center current-page">
+						<div class="round">
+							<span class="step-number">3</span>
+						</div>Bid
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-3 text-center">
+							<span class="step-number"><a href="step4.html" class="fa fa-arrow-right"></a></span>
+					</div>
+				</div>
+			</div>			
+		</div>
+		<div class="container-fluid form-part middle-content">
+			<div class="container">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="journey-plan">
+					<div class="col-md-12">
+						<div class="col-sm-4 dep-des text-center">
+							<p>Chennai-India</p>
+							<h2>MAA 06:30</h2>
+							<p>SAT,20 SEP</p>
+							<p>Chennai,T-1</p>
+						</div>
+						<div class="col-sm-4 dep-des">
+							<img src="assets/images/ticket-fly.jpg" class="img-responsive" style="width:100%;">					
+						</div>
+						<div class="col-sm-4 dep-des text-center">
+							<p>New Delhi-India</p>
+							<h2>DEL 09:15</h2>
+							<p>SAT,20 SEP</p>
+							<p>Delhi,T-3</p>
+						</div>
+					</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="clearfix"></div>
+				<div class="divider"></div>
+				<div class="col-md-8 col-md-offset-2">
+					<div class="detail-box">
+						<h3>YOUR DETAILS</h3>
+						<table class="table table-bordered">
+							<!--<thead>
+								<tr>
+									<th><h4>Elements</h4></th>
+									<th><h4>Details</h4></th>
+								</tr>
+							</thead>-->
+							<tbody>
+								<tr>
+									<td class="text-left"><h4>Departure</h4></td>
+									<td class="text-left"><h4>Chennai</h4></td>
+								</tr>
+								<tr>
+									<td class="text-left"><h4>Destination</h4></td>
+									<td class="text-left"><h4>Delhi</h4></td>
+								</tr>
+								<tr>
+									<td class="text-left"><h4>Date of travel</h4></td>
+									<td class="text-left"><h4>20.09.2015</h4></td>
+								</tr>
+								<tr>
+									<td class="text-left"><h4>Total No of passengers</h4></td>
+									<td class="text-left"><h4>1</h4></td>
+								</tr>
+								<tr>
+									<td class="text-left"><h4>Time Zone</h4></td>
+									<td class="text-left"><h4>06:30</h4></td></td>
+								</tr>
+								<tr>
+									<td class="text-left"><h4>Travel Plan</h4></td>
+									<td class="text-left"><h4>Single</h4></td></td>
+								</tr>
+								<tr>
+									<td class="text-left"><h4>Stoppage Preferences</h4></td>
+									<td class="text-left"><h4>1<h4></td></td>
+								</tr>
+								<tr>
+									<td class="text-left"><h4>Luggage</h4></td>
+									<td class="text-left"><h4>Hand Baggage Only</h4></td>
+								</tr>
+								<tr>
+									<td class="text-left"><h4>Return Date</h4></td>
+									<td class="text-left"><h4>Nil</h4></td>
+								</tr>
+							</tbody>							
+						</table>
+						<!--<div class="col-md-4 col-sm-4 col-xs-4 text-align-right min-width">
+						<h4>Departure:</h4>
+						</div>
+						<div class="col-md-8 col-sm-8 col-xs-8 text-left">
+						<h4>Chennai</h4>
+						</div>
+						<div class="clearfix">
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-4 text-align-right min-width">
+						<h4>Destination:</h4>
+						</div>
+						<div class="col-md-8 col-sm-8 col-xs-8 text-left">
+						<h4>Delhi</h4>
+						</div>
+						<div class="clearfix">
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-4 text-align-right min-width">
+						<h4>Date of travel:</h4>
+						</div>
+						<div class="col-md-8 col-sm-8 text-left">
+						<h4>20.09.2015</h4>
+						</div>
+						<div class="clearfix">
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-4 text-align-right min-width">
+						<h4>Total No of passengers:</h4>
+						</div>
+						<div class="col-md-8 col-sm-8 col-xs-8 text-left">
+						<h4>1</h4>
+						</div>
+						<div class="clearfix">
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-4 text-align-right min-width">
+						<h4>Time Zone:</h4>
+						</div>
+						<div class="col-md-8 col-sm-8 col-xs-8 text-left">
+						<h4>06.30</h4>
+						</div>
+						<div class="clearfix">
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-4 text-align-right min-width">
+						<h4>Travel Plan:</h4>
+						</div>
+						<div class="col-md-8 col-sm-8 col-xs-8 text-left">
+						<h4>Single</h4>
+						</div>
+						<div class="clearfix">
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-4 text-align-right min-width">
+						<h4>Stoppage Preferences:</h4>
+						</div>
+						<div class="col-md-8 col-sm-8 col-xs-8 text-left">
+						<h4>1</h4>
+						</div>
+						<div class="clearfix">
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-4 text-align-right min-width">
+						<h4>Luggage</h4>
+						</div>
+						<div class="col-md-8 col-sm-8 col-xs-8 text-left">
+						<h4>Hand Baggage Only</h4>
+						</div>
+						<div class="clearfix">
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-4 text-align-right min-width">
+						<h4>Return Date:</h4>
+						</div>
+						<div class="col-md-8 col-sm-8 col-xs-8 text-left">
+						<h4>Nil</h4>
+						</div>
+						<div class="clearfix">
+						</div>-->
+					</div>
+				</div>
+				<div class="col-md-8 col-md-offset-2">
+					<div class="detail-box passenger-box" style="min-width:220px;">
+						<h3>PASSENGER DETAILS</h3>
+						<table class="table table-bordered">
+							<thead>
+								<tr>
+									<th><h4>Name</h4></th>
+									<th><h4>Details</h4></th>
+									<th><h4>Age</h4></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="text-left"><h4>Lorum Ipsum</h4></td>
+									<td class="text-left"><h4>Chennai-Delhi</h4></td>
+									<td class="text-left"><h4>25</h4></td>
+								</tr>
+							</tbody>							
+						</table>
+					</div>
+				</div>
+				<div class="col-md-8 col-md-offset-2">
+					<div class="detail-box">
+						<h3>CONFIRM YOUR BID</h3>
+						<div class="bid-amt">
+						<h2><i class="fa fa-inr"></i>2000</h2>
+						</div>
+					</div>					
+				</div>
+				<div class="clearfix"></div>
+				<div class="divider"></div>
+				<div class="col-md-8 col-md-offset-2 payment-part">
+					<img src="assets/images/payment-method.png" class="img-responsive" width="100%">
+				</div>
+				<div class="col-md-8 col-md-offset-2 conditions">
+					<ul>
+						<li>Your airline tickets are non-refundable, non-transferable and non-changeable.</li>
+						<li>Your tickets will be round-trip, coach class tickets issued on one of CanFly's partner airlines. You must fly on the flights assigned to you. Upgrades and standbys are not available. If you do not take your outbound flight, the airlines will automatically cancel the remainder of your reservation. If any part of the ticket is unused it has no value after ticketed departure time.</li>
+						<li>Name Your Own Price tickets issued through CanFly are not eligible for frequent flyer miles. CanFly customers are protected by the same airline regulations extended to all passengers, including protection against overbookings and baggage loss.</li>
+						<li>If we find an airline that accepts your price, we'll immediately purchase your tickets using the payment information you provided.</li>
+						<li>You will be issued electronic tickets. Remember to bring a valid government-issued photo ID with you to check-in</li>
+					</ul>
+				</div>
+				<div class="confirm-bid">
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="accepted">
+							I agree to Honor Payment by Default if the Bidding is Successfully
+						</label>
+					</div>
+					<div class="btn-bottom" style="margin-top:50px;">
+						<a href="step4.html" class="btn home-btn" value="Confirm Bid" type="submit">BID</a>
+					</div>
+				</div>
+			</div>			
+		</div>		
+		<!--<div class="container-fluid footer-steps">
+			<div class="container">
+				<div class="col-md-12 text-center">
+					<div class="col-md-2 col-md-offset-4">
+					<ul class="header-top">
+						<li><a href="#">About us</a></li>
+					</ul>
+					</div>
+					<div class="col-md-2">
+					<ul class="header-top">
+						<li><a href="#">Contact</a></li>
+					</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="border-bottom"></div>-->
+	</div>
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/bootstrap-select.min.js"></script>
+	<script type="text/javascript" src="assets/js/datepicker.js"></script>
+	<script src="assets/js/icheck.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  $('input').iCheck({
+		    checkboxClass: 'icheckbox_square-yellow',
+		    radioClass: 'iradio_square-yellow'
+		  });
+		});
+		$(document).ready(function ($) {
+        $(window).load(function () {
+            setTimeout(function(){
+                $('#preloader').fadeOut('slow', function () {
+                });
+            },2000);
+
+        });  
+    });    
+	</script>	
+</body>
+</html>
