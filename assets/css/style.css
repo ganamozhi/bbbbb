@@ -7,7 +7,9 @@ body
 	background-attachment: fixed;
 	background-size: cover;
 	background-color: #464646;
-	line-height: 1.42857143; 
+	line-height: 1.42857143;
+	width: 100%;
+	height: auto;
 }
 
 .wrap
@@ -103,7 +105,8 @@ body
 	border-top: 7px solid #ffac19;
 	padding: 20px 20px;
 	background-color: rgba(235, 235, 235, 0.5);
-	text-align: center;	
+	text-align: center;
+	margin-bottom: 150px;	
 }
 .banner-box h1
 {
@@ -528,24 +531,23 @@ tr td h4
 	margin-left: 0;
 }
 
-.btn-bar
+a.nav-btn
 {
 	background-color: transparent;
-    border:3px solid #eea236;
-    border-radius: 2px;
+    border:3px solid #ffffff;
+    border-radius: 3px;
     text-decoration: none;
-    color: #ffffff;
-    margin-top: 5px;
-    margin-left: 5px;
-    font-size: 18px;
+    color: #eea236;
+    font-size:20px;
+    padding:12px 15px;
+    transition:all 0.5s ease-in-out;
 }
-.btn-bar:hover
+a.nav-btn:hover
 {
-	text-decoration: none;
-	background-color: transparent;
-	border-color: #ffffff;
-	color: #ffac19;
+	border-color: #eea236;
+	color: #ffffff;
 	transition:all 0.5s ease-in-out;
+	text-decoration: none;
 }
 
 .btn-bar:after
